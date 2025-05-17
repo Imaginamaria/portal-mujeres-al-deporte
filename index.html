@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Mujeres al deporte</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+        <div class="log" style="width: 150px;">
+          <a href="index.html"><img src="img/IsoMujeres_Rojo.svg" alt="logo mujeres al deporte" ></a>
+        </div> 
+        
+        <div class="main-menu">
+          <ul><li>
+            <a class="btn btn-dark" id="openModalBtn"><i class="fas fa-user" style="padding-right: 10px;"></i>EDITORES ASOCIADOS</a>
+          </li></ul>
+        </div>
+
+    </div> 
+    
+
+  </nav>
+
+
+
+  <div class="second-menu">
+    <div class="container menubar">
+      <ul>
+        <li><a class="btn btn-dark" href="#">ENTRENAMIENTO</a></li>
+        <li><a class="btn btn-dark active" href="#">NUTRICION</a></li>
+        <li><a class="btn btn-dark" href="#">LESIONES</a></li>
+        <li><a class="btn btn-dark" href="#">PSICOLOGIA</a></li>
+        <li><a  class="btn btn-dark" href="#">NOTICIAS</a></li>
+      </ul>
+    </div>
+
+    <!-- Hamburger Button lo comente porque no me funciona bien
+    <button  class="hamburger-button active">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </button>
+    <div class="mobile-menu ">
+      <ul>
+        <li><a class="btn btn-dark" href="#">ENTRENAMIENTO</a></li>
+        <li><a class="btn btn-dark active" href="#">NUTRICION</a></li>
+        <li><a class="btn btn-dark" href="#">LESIONES</a></li>
+        <li><a class="btn btn-dark" href="#">PSICOLOGIA</a></li>
+        <li><a  class="btn btn-dark" href="#">RECURSOS</a></li>
+      </ul>-->
+
+    </div>
+
+
+
+
+    <!-- Hero -->
+
+    <div class="section hero">
+      <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title text-xxl">Nutrición y deporte</h1>
+            <h2 class="hero-text text-xl">Calidad vs. cantidad: no seas víctima de la decepción masiva.</h2>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-dark active">Agenda una cita profesional</a>
+              <a href="#" class="btn btn-dark"><i class="fas fa-laptop" style="padding-right: 10px;"></i>Inscríbete al workshop</a>
+            </div>
+            
+
+        </div>
+
+  
+
+  
+      </div>
+    </div>
+
+        <!-- Section Recetas-->
+
+        <section class="recetas bg-light">
+          <div class="container">
+            <h2 class="recetas-titulo text-xl text-center">
+              Organiza un plan de alimentación con recetas saludables
+
+            </h2>
+
+            <div id="map">
+
+              
+                <form id="recipe-search-form">
+                  <h3>Encuentra tu receta saludable</h3>
+
+                  <select name="Categorias" id="recetas-categorias">
+                    <option value="">Todas las categorías</option>
+                  
+                  </select>
+
+
+                  <input type="text" id="search-input" name="search-query" placeholder="Ingrese una comida">
+                  <!--  <button type="submit" class="btn btn-dark " >Buscar</button> -->
+                
+
+
+                </form>
+        
+            </div>
+
+
+
+            <div class="recetas-content">
+              <div id="contenedor">
+              </div>
+            </div>
+
+            <div id="favoritas">
+              <!-- <h3>Favoritas</h3> -->
+          </div>
+
+           
+
+
+
+          
+          </div>
+        </section>
+
+
+
+
+
+    <!-- Testimoniales -->
+    <section class="testimoniales bg-dark">
+      <div class="container">
+        <h3 class="testimoniales-titulo text-xl text-center">
+          Testimonios auténticos que revelan la Importancia de elegir lo mejor para tu cuerpo
+
+        </h3>
+
+        <div class="testimoniales-grid">
+              <div class="testimoniales-card">
+              <p> Como deportista, siempre pensé que más era mejor cuando se trataba de comida. Sin embargo, al cambiar mi enfoque hacia la calidad de lo que como, he notado una mejora significativa en mi rendimiento. Ahora me concentro en alimentos ricos en nutrientes y proteínas magras, y mi resistencia y recuperación han mejorado notablemente.</p>
+
+              <p>Jimena</p>
+              <p>Maldonado, Uruguay</p>
+              </div>
+
+              <div class="testimoniales-card">
+                <p>Desde que cambié mi enfoque de simplemente llenar mi plato a seleccionar alimentos de alta calidad, he experimentado una transformación total en mi salud. Ya no me siento hinchado ni cansado después de las comidas, y mi energía ha aumentado enormemente. ¡La calidad realmente hace la diferencia!</p>
+  
+                <p>Fernando</p>
+                <p>Montevideo, Uruguay</p>
+                </div>
+
+
+              <div class="testimoniales-card">
+                <p>Como atleta, solía caer en la trampa de pensar que necesitaba carbohidratos y calorías en grandes cantidades para rendir bien. Sin embargo, al adoptar un enfoque más consciente de la calidad de mis alimentos, he experimentado una mejora significativa en mi rendimiento. Ahora me concentro en alimentos integrales y nutrientes esenciales, y mi resistencia y fuerza han alcanzado nuevos niveles.</p>
+  
+                <p>Enrique</p>
+                <p>Maldonado, Uruguay</p>
+                </div>
+
+        </div>
+  
+         
+        
+      </div>
+    </section>
+
+    <footer class="footer bg-primary">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html"><img src="img/IsoMujeres_Negro.svg" alt="Logo Mujeres al Deporte" style="width: 80px; padding-top: 20px;"></a>
+
+            <div class="newsletter-card">
+              <h3>Suscribete a nuestra newsletter</h3>
+              <p class="text-sm">¡Únete ahora para recibir recetas saludables y energizantes que te ayudarán a mantener un estilo de vida vibrante y activo!</p>
+              <form>
+                <input type="email" id="email" placeholder="Ingresa tu correo">
+                <button type="submit" class="btn btn-dark btn-block">Suscribirme</button>
+              </form>
+            </div>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Nuestra historia</a></li>
+              <li><a href="#">Únete al equipo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>
+              <a href="#">Recursos</a></h4>
+            <ul>
+              <li><a href="#">Noticias</a> </li>
+
+              <li><a href="#"> Academia</a></li>
+              <li><a href="#"> Coaching Deportivo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href="#">info@mujeresaldeporte.com.uy</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+
+      </div>
+
+
+
+    </footer>
+
+ <!-- Modal Colaboradores -->
+<div id="subscriptionModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModalBtn">&times;</span>
+    <h2>Conviértete en un editor de Mujeres al Deporte</h2>
+    <p class="text-m">
+      Nos enorgullece contar con un equipo diverso y comprometido de editores asociados que aportan su experiencia y dedicación para impulsar nuestros proyectos. Gracias a su trabajo conjunto, logramos alcanzar nuestras metas con mayor eficacia y calidad.<br><br>
+      Nuestros editores son profesionales apasionados que, desde distintas áreas y especialidades, contribuyen al crecimiento y la innovación constante de nuestra organización.<br><br>
+      Seguimos fortaleciendo estas alianzas para seguir construyendo un futuro sólido y lleno de oportunidades.
+    </p>
+
+    <a href="https://mujeres-al-deporte-news.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" style="margin-top: 15px;">
+      Asociate aquí
+    </a>
+
+
+  </div>
+</div>
+
+
+
+    
+    <script type="module" src="js/index.js"></script>
+    
+</body>
+</html>
