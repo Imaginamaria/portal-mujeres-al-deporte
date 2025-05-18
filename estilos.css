@@ -789,7 +789,7 @@ padding: 20px;
     width: 100%;
   }
 
-  /* Mostrar el menú del hamburguesa */
+  /* Mostrar el menú del mobile */
   .second-menu .container .menubar {
     display: none;
   }
@@ -799,6 +799,17 @@ padding: 20px;
   }
 
   /* hero mobile */
+
+  .navbar .main-menu ul li {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem !important;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+
+  
 
   .second-menu {
     background-color: var(--dark);
@@ -811,22 +822,36 @@ padding: 20px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
   }
   
   .second-menu .container ul{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
-  .second-menu .container ul li a{
-    color: #fff;
-    padding: 15px 55px;
-    margin-left: 0.9px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  .second-menu .container ul li {
+    width: 100%;
+  }
+  
+  .second-menu .container ul li a {
+    display: block; /* Esto es clave */
+    width: 100%;
+    padding: 15px; /* Menos padding horizontal */
+    box-sizing: border-box; /* Para que el padding no desborde */
+    text-align: center;
     font-weight: 600;
-    transition: 0.5s;
+    color: #fff;
+    transition: background-color 0.5s;
+  }
+
+  .second-menu .container ul li a:hover {
+    background-color: var(--primary);
   }
 
   .hero .container{
@@ -868,6 +893,8 @@ padding: 20px;
 
   .grid-img-recetas{
     grid-template-columns: 1fr 1fr ;
+    padding-top: 2rem;
+    height: 70%;
   }
 
   /* recetas mobile */
